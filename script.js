@@ -1,6 +1,6 @@
     import checkComplete from "./components/checkComplete.js";
     import deleteIcon from "./components/deleteIcon.js";
-    
+
 const btn = document.querySelector('[data-form-btn]');
 
 const createTask = (evento) => {
@@ -17,6 +17,7 @@ const createTask = (evento) => {
     titleTask.innerHTML = value;
     taskContent.appendChild(checkComplete());
     taskContent.appendChild(titleTask);
+    
     // task.innerHTML = content;
     task.appendChild(taskContent);
     task.appendChild(deleteIcon());
